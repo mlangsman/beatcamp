@@ -9,10 +9,19 @@ const heroStyle = css`
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 12vw)
+    );
 `
+
 
 export default class Hero extends React.Component {
   render() {
-    return(<div className={heroStyle}></div>);
+    return(
+      <div className={heroStyle}></div>
+    );
   }
 }
