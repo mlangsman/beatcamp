@@ -1,11 +1,18 @@
 import React from 'react'
+import { css } from 'emotion';
+
+const raised = css`
+  position: relative;
+  padding-top: 50px;
+  top: 0px;
+`
 
 export default class Section extends React.Component {
   render() {
     return(
-      <div>
-        <h1>Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <div className={raised}>
+        <h1>Make music <br />together.</h1>
+        <p>BeatCamp helps producers like you to escape the distractions of the modern world and collaborate in inspiring locations.</p>
       </div>
     );
   }
