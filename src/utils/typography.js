@@ -12,7 +12,7 @@ const typography = new Typography({
   googleFonts: [
   {
     name: 'Montserrat',
-    styles: [ '700', '700i','400']
+    styles: [ '700', '700i','700italic','400']
   },
   {
     name: 'Open Sans',

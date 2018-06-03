@@ -2,14 +2,16 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Typography from 'typography'
 import { css } from 'emotion'
+import { spacing } from '../utils/globalStyles'
 
-import Hero from '../components/hero/hero.js'
-import Section from '../components/section/section.js'
+import Hero from '../components/hero/hero'
+import Section from '../components/section/section'
 
 const mainContainer = css`
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: ${spacing*4}px;
+  margin-right: ${spacing*4}px;
 `
+console.log(spacing);
 
 const IndexPage = () => (
   <div>
