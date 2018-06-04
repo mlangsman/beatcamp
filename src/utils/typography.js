@@ -28,6 +28,9 @@ const typography = new Typography({
     button: {
       fontFamily: 'Montserrat',
       fontWeight: 600
+    },
+    img: {
+      margin:0
     }
 
   })

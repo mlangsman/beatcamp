@@ -1,6 +1,7 @@
 import React from 'react'
 import { css } from 'emotion';
 import { spacing, backgroundColor } from '../../utils/globalStyles'
+import Card from '../card/card.js'
 
 const section = css`
   padding-top: ${spacing*2}px;
@@ -8,7 +9,6 @@ const section = css`
 `
 
 const flourish = css`
-  background-color: red;
   height: ${7*spacing}px;
   width: ${spacing/2}px;
   position: absolute;
@@ -27,7 +27,9 @@ export default class Section extends React.Component {
       <div className={flourish}></div>
         <h1>Make music <br />together.</h1>
         <p>BeatCamp helps producers like you to escape the distractions of the modern world and collaborate in inspiring locations.</p>
+        <Card />
       </div>
+
     );
   }
 }
