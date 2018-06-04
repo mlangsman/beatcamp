@@ -12,7 +12,7 @@ const typography = new Typography({
   googleFonts: [
   {
     name: 'Montserrat',
-    styles: [ '700', '700i','700italic','400']
+    styles: [ '700', '700i','700italic','600','500','400']
   },
   {
     name: 'Open Sans',
@@ -25,6 +25,10 @@ const typography = new Typography({
       lineHeight: 0.8,
       letterSpacing: '-2px'
     },
+    button: {
+      fontFamily: 'Montserrat',
+      fontWeight: 600
+    }
 
   })
 
