@@ -5,7 +5,7 @@ import heroImage from './hero@2x.jpg';
 const heroStyle = css`
   background-image: url(${heroImage});
   background-attachment: fixed;
-  background-position: left center;
+  background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
