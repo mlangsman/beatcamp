@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { css } from 'react-emotion';
+import Ratio from 'react-ratio';
 import { spacing, backgroundColor } from '../../utils/globalStyles'
 import cardImage from './cardImage.jpg'
 
@@ -14,29 +15,37 @@ const ContentCard = styled('div')`
 `
 
 const FlexItemText = styled('div')`
-  flex: 0 1 50%;
+  float:left;
   max-width: 50%;
   text-align: center;
   padding: ${2.5*spacing}px;
 `
 
 const FlexItemImage = styled('div')`
-  flex: 0 1 50%;
+  float:left;
   max-width: 50%;
+`
+
+const Clear = styled('div')`
+  clear: both;
 `
 
 export default class Card extends React.Component {
   render() {
     return(
-      <ContentCard>
-        <FlexItemText>
-          <h3>Time to explore your ideas and get lost in music</h3>
-          <p>At our unique collaborative production camps your time is your own and there are no disturbances from the outside world. </p>
-        </FlexItemText>
-        <FlexItemImage>
-          <img src={cardImage} />
-        </FlexItemImage>
-      </ContentCard>
+      <div>
+        <Ratio ratio={ 1200 / 453 } css={`background-color:white; display:flex;`}>
+          <FlexItemText>
+            <h3>Time to explore your ideas and get lost in&nbsp;music</h3>
+            <p>At our unique collaborative production camps your time is your own and there are no disturbances from the outside world. </p>
+          </FlexItemText>
+          <FlexItemImage>
+            <img src={cardImage} />
+          </FlexItemImage>
+          <Clear />
+        </Ratio>
+      </div>
+
     );
   }
 }
