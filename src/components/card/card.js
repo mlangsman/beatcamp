@@ -35,7 +35,7 @@ export default class Card extends React.Component {
   render() {
     return(
       <div>
-        <Ratio ratio={ 1200 / 453 } css={`background-color:white; display:flex; margin-bottom:${spacing}`}>
+        <Ratio ratio={ 1200 / 453 } css={`background-color:white; display:flex; margin-bottom: ${spacing}px`}>
           <FlexItemText>
           <img src={icon1} />
             <h3>{this.props.card.heading}</h3>
