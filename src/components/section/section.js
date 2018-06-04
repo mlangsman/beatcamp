@@ -1,9 +1,10 @@
 import React from 'react'
 import { css } from 'emotion';
-import { spacing } from '../../utils/globalStyles'
+import { spacing, backgroundColor } from '../../utils/globalStyles'
 
 const section = css`
   padding-top: ${spacing*2}px;
+  background-color: ${backgroundColor};
 `
 
 const flourish = css`

@@ -2,11 +2,15 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Typography from 'typography'
 import { css } from 'emotion'
-import { spacing } from '../utils/globalStyles'
+import { spacing, backgroundColor } from '../utils/globalStyles'
 
 import Hero from '../components/hero/hero'
 import Section from '../components/section/section'
 import Nav from '../components/nav/nav'
+
+const background = css`
+  background-color: ${backgroundColor};
+`
 
 const mainContainer = css`
   margin-left: ${spacing*4}px;
@@ -15,7 +19,7 @@ const mainContainer = css`
 console.log(spacing);
 
 const IndexPage = () => (
-  <div>
+  <div className={background}>
     <Nav />
     <Hero />
     <div className={mainContainer}>

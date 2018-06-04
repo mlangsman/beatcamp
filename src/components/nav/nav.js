@@ -16,7 +16,7 @@ const Navbar = styled('div')`
 `
 
 const Logo = styled('img')`
-  width: 242px;
+  width: 200px;
   display: inline-block;
 `
 
