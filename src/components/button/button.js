@@ -13,6 +13,9 @@ const CTAButton = styled('button')`
   background: -webkit-linear-gradient(-45deg, #e6487c 0%,#ff6761 100%);
   background: linear-gradient(135deg, #e6487c 0%,#ff6761 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6487c', endColorstr='#ff6761',GradientType=1 );
+  -webkit-box-shadow: 0px 20px 18px 0px rgba(23,22,22,1);
+  -moz-box-shadow: 0px 20px 18px 0px rgba(23,22,22,1);
+  box-shadow: 0px 20px 18px 0px rgba(23,22,22,0.5);
 `
 
 export default class Button extends React.Component {
