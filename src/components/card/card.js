@@ -3,6 +3,7 @@ import styled, { css } from 'react-emotion';
 import Ratio from 'react-ratio';
 import { spacing, backgroundColor } from '../../utils/globalStyles'
 import cardImage from './cardImage.jpg'
+import icon1 from './icon1.jpg'
 
 const ContentCard = styled('div')`
   background-color: white;
@@ -34,13 +35,14 @@ export default class Card extends React.Component {
   render() {
     return(
       <div>
-        <Ratio ratio={ 1200 / 453 } css={`background-color:white; display:flex;`}>
+        <Ratio ratio={ 1200 / 453 } css={`background-color:white; display:flex; margin-bottom:${spacing}`}>
           <FlexItemText>
-            <h3>Time to explore your ideas and get lost in&nbsp;music</h3>
-            <p>At our unique collaborative production camps your time is your own and there are no disturbances from the outside world. </p>
+          <img src={icon1} />
+            <h3>{this.props.card.heading}</h3>
+            <p>{this.props.card.body}</p>
           </FlexItemText>
           <FlexItemImage>
-            <img src={cardImage} />
+            <img src={require(this.props.card.image)} />
           </FlexItemImage>
           <Clear />
         </Ratio>

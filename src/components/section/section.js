@@ -17,8 +17,19 @@ const flourish = css`
   background: -moz-linear-gradient(-80deg, #e6487c 0%, #ff6761 100%);
   background: -webkit-linear-gradient(-80deg, #e6487c 0%,#ff6761 100%);
   background: linear-gradient(135deg, #e6487c 0%,#ff6761 100%);
-
 `
+
+const card1 = {
+  heading: "Time to explore your ideas and get lost\u00a0in\u00a0music",
+  body: "At our unique collaborative production camps your time is your own and there are no disturbances from the outside world.",
+  image: './cardImage.jpg'
+}
+
+const card2 = {
+  heading: "Experience your peak creative flow",
+  body: "With a partner to bounce ideas off and a structured deadline you’ll breeze through challenges and go home with a finished track",
+  image: './cardImage.jpg'
+}
 
 export default class Section extends React.Component {
   render() {
@@ -27,7 +38,8 @@ export default class Section extends React.Component {
       <div className={flourish}></div>
         <h1>Make music <br />together.</h1>
         <p>BeatCamp helps producers like you to escape the distractions of the modern world and collaborate in inspiring locations.</p>
-        <Card />
+        <Card card={card1} />
+        <Card card={card2} />
       </div>
 
     );
