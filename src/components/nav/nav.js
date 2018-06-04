@@ -17,13 +17,13 @@ const Navbar = styled('div')`
 
 const Logo = styled('img')`
   width: 242px;
-/*  margin: auto;
-  display: block;
-  text-align:center; */
+  display: inline-block;
 `
 
 const floatRight = css`
-  float: right;
+  position: absolute;
+  right: ${spacing}px;
+  display: inline-block;
 `
 
 export default class Nav extends React.Component {

@@ -4,7 +4,6 @@ import styled, { css } from 'react-emotion';
 import { spacing } from '../../utils/globalStyles'
 
 const CTAButton = styled('button')`
-  display: inline-block;
   color: white;
   border: none;
   border-radius: 40px;
