@@ -27,6 +27,11 @@ const FlexItemImage = styled('div')`
   max-width: 50%;
 `
 
+const Icon = styled('img')`
+  width: 60px;
+  padding-bottom: ${spacing}px;
+`
+
 const Clear = styled('div')`
   clear: both;
 `
@@ -35,9 +40,9 @@ export default class Card extends React.Component {
   render() {
     return(
       <div>
-        <Ratio ratio={ 1200 / 453 } css={`background-color:white; display:flex; margin-bottom: ${spacing}px`}>
+        <Ratio ratio={ 1200 / 453 } css={`background-color:white; display:flex; margin-bottom: ${spacing}px; overflow: hidden`}>
           <FlexItemText>
-          <img src={icon1} />
+          <Icon src={icon1}/>
             <h3>{this.props.card.heading}</h3>
             <p>{this.props.card.body}</p>
           </FlexItemText>

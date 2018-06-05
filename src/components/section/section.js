@@ -28,7 +28,13 @@ const card1 = {
 const card2 = {
   heading: "Experience your peak creative flow",
   body: "With a partner to bounce ideas off and a structured deadline you’ll breeze through challenges and go home with a finished track",
-  image: './cardImage.jpg'
+  image: './cardImage2.jpg'
+}
+
+const card3 = {
+  heading: "Get real life support and encouragement",
+  body: "You’ll meet, work and party with producers at all different levels, receive feedback and coaching, and play your music to a crowd.",
+  image: './cardImage3.jpg'
 }
 
 export default class Section extends React.Component {
@@ -40,6 +46,7 @@ export default class Section extends React.Component {
         <p>BeatCamp helps producers like you to escape the distractions of the modern world and collaborate in inspiring locations.</p>
         <Card card={card1} />
         <Card card={card2} />
+        <Card card={card3} />
       </div>
 
     );
