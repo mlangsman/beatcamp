@@ -2,6 +2,9 @@ import React from 'react'
 import { css } from 'emotion';
 import { spacing, backgroundColor } from '../../utils/globalStyles'
 import Card from '../card/card.js'
+import Typography from '../../utils/typography'
+
+console.log(Typography.options.headerFontFamily);
 
 const section = css`
   padding-top: ${spacing*2}px;
@@ -17,6 +20,12 @@ const flourish = css`
   background: -moz-linear-gradient(-80deg, #e6487c 0%, #ff6761 100%);
   background: -webkit-linear-gradient(-80deg, #e6487c 0%,#ff6761 100%);
   background: linear-gradient(135deg, #e6487c 0%,#ff6761 100%);
+`
+
+const subheadline = css`
+  font-family: ${Typography.options.headerFontFamily.toString()};
+  width: 75%;
+  margin-bottom: ${3*spacing}px;
 `
 
 const card1 = {
@@ -43,7 +52,7 @@ export default class Section extends React.Component {
       <div className={section}>
       <div className={flourish}></div>
         <h1>Make music <br />together.</h1>
-        <p>BeatCamp helps producers like you to escape the distractions of the modern world and collaborate in inspiring locations.</p>
+        <p className={subheadline}>BeatCamp helps producers like you to escape the distractions of the modern world and collaborate in inspiring locations.</p>
         <Card card={card1} />
         <Card card={card2} />
         <Card card={card3} />
