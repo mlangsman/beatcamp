@@ -4,7 +4,7 @@ import { spacing, backgroundColor } from '../../utils/globalStyles'
 import Card from '../card/card.js'
 import Typography from '../../utils/typography'
 
-console.log(Typography.options.headerFontFamily);
+/* console.log(Typography.options.scaleRatio); */
 
 const section = css`
   padding-top: ${spacing*2}px;
@@ -29,21 +29,24 @@ const subheadline = css`
 `
 
 const card1 = {
-  heading: "Time to explore your ideas and get lost\u00a0in\u00a0music",
+  heading: "Time to explore your ideas and get lost in\u00a0music",
   body: "At our unique collaborative production camps your time is your own and there are no disturbances from the outside world.",
-  image: './cardImage.jpg'
+  image: './cardImage.jpg',
+  icon: './icon1.jpg'
 }
 
 const card2 = {
   heading: "Experience your peak creative flow",
   body: "With a partner to bounce ideas off and a structured deadline you’ll breeze through challenges and go home with a finished track",
-  image: './cardImage2.jpg'
+  image: './cardImage2.jpg',
+  icon: './icon2.jpg'
 }
 
 const card3 = {
   heading: "Get real life support and encouragement",
   body: "You’ll meet, work and party with producers at all different levels, receive feedback and coaching, and play your music to a crowd.",
-  image: './cardImage3.jpg'
+  image: './cardImage3.jpg',
+  icon: './icon3.jpg'
 }
 
 export default class Section extends React.Component {

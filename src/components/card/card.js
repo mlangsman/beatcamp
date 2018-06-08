@@ -4,6 +4,8 @@ import Ratio from 'react-ratio';
 import { spacing, backgroundColor } from '../../utils/globalStyles'
 import cardImage from './cardImage.jpg'
 import icon1 from './icon1.jpg'
+import Typography from '../../utils/typography'
+
 
 const ContentCard = styled('div')`
   background-color: white;
@@ -19,7 +21,16 @@ const FlexItemText = styled('div')`
   float:left;
   max-width: 50%;
   text-align: center;
-  padding: ${2.5*spacing}px;
+  padding: ${2*spacing}px;
+  @media (max-width: 1350px) {
+    font-size: 16px ;
+
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
+
+
 `
 
 const FlexItemImage = styled('div')`
@@ -27,9 +38,13 @@ const FlexItemImage = styled('div')`
   max-width: 50%;
 `
 
-const Icon = styled('img')`
+const Icon = css`
   width: 60px;
   padding-bottom: ${spacing}px;
+  @media (max-width: 1350px) {
+    width: 40px;
+    }
+  }
 `
 
 const Clear = styled('div')`
@@ -40,9 +55,9 @@ export default class Card extends React.Component {
   render() {
     return(
       <div>
-        <Ratio ratio={ 1200 / 453 } css={`background-color:white; display:flex; margin-bottom: ${spacing}px; overflow: hidden`}>
+        <Ratio ratio={ 1200 / 453 } css={`background-color:white; display:flex; margin-bottom: ${spacing}px; overflow: hidden; max-width: 1200px; margin-left: auto; margin-right: auto;`}>
           <FlexItemText>
-          <Icon src={icon1}/>
+          <img src={require(this.props.card.icon)} className={Icon}/>
             <h3>{this.props.card.heading}</h3>
             <p>{this.props.card.body}</p>
           </FlexItemText>
