@@ -30,14 +30,14 @@ const subheadline = css`
 
 const card1 = {
   heading: "Time to explore your ideas and get lost in\u00a0music",
-  body: "At our unique collaborative production camps your time is your own and there are no disturbances from the outside world.",
+  body: "At our unique collaborative production camps your time is your own and there are no disturbances from the outside\u00a0world.",
   image: './cardImage.jpg',
   icon: './icon1.jpg'
 }
 
 const card2 = {
   heading: "Experience your peak creative flow",
-  body: "With a partner to bounce ideas off and a structured deadline you’ll breeze through challenges and go home with a finished track",
+  body: "With a partner to bounce ideas off and a structured deadline you’ll breeze through challenges and go home with a finished\u00a0track",
   image: './cardImage2.jpg',
   icon: './icon2.jpg'
 }
