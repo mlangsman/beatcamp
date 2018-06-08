@@ -6,13 +6,14 @@
   "dependencies": {
     "emotion": "^9.1.3",
     "emotion-server": "^9.1.3",
-    "gatsby": "^1.9.269",
+    "gatsby": "^1.9.270",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-emotion": "^1.1.17",
     "gatsby-plugin-glamor": "^1.6.13",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-typography": "^1.7.18",
     "react-emotion": "^9.1.3",
+    "react-flowtype": "https://github.com/bond-agency/react-flowtype/tarball/v1.0.4",
     "react-helmet": "^5.2.0",
     "react-parallax": "^1.7.0",
     "react-ratio": "^0.1.5"
