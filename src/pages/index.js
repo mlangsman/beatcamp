@@ -9,6 +9,7 @@ import Section from '../components/section/section'
 import Divider from '../components/divider/divider'
 import Nav from '../components/nav/nav'
 import Container from '../components/container/container'
+import Testimonial from '../components/testimonial/testimonial'
 
 const background = css`
   background-color: ${palette.backgroundLight};
@@ -20,9 +21,17 @@ const IndexPage = () => (
   <div className={background}>
     <Nav />
     <Hero />
-    <Container style="light"><Section /></Container>
+
+    <Container style="light">
+      <Section />
+    </Container>
+
     <Divider />
-    <Container style="dark"><h1>I am a big poo</h1></Container>
+
+    <Container style="dark">
+      <Testimonial />
+    </Container>
+
   </div>
 )
 
