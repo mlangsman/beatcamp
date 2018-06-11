@@ -8,7 +8,6 @@ import Typography from '../../utils/typography'
 
 const section = css`
   padding-top: ${spacing*2}px;
-  background-color: ${palette.backgroundLight};
 `
 
 const flourish = css`
