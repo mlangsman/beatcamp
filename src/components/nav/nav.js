@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
-import { spacing, blackColor, blackTransparentColor } from '../../utils/globalStyles'
+import { spacing, palette } from '../../utils/globalStyles'
 import logo from './beatcampLogo.png'
 import Button from '../button/button'
 

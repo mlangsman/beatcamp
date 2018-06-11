@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { css } from 'react-emotion';
 import Ratio from 'react-ratio';
-import { spacing, backgroundColor } from '../../utils/globalStyles'
+import { spacing } from '../../utils/globalStyles'
 import cardImage from './cardImage.jpg'
 import icon1 from './icon1.jpg'
 import Typography from '../../utils/typography'

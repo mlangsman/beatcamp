@@ -1,6 +1,6 @@
 import React from 'react'
 import { css } from 'emotion';
-import { spacing, backgroundColor } from '../../utils/globalStyles'
+import { spacing, palette } from '../../utils/globalStyles'
 import Card from '../card/card.js'
 import Typography from '../../utils/typography'
 
@@ -8,7 +8,7 @@ import Typography from '../../utils/typography'
 
 const section = css`
   padding-top: ${spacing*2}px;
-  background-color: ${backgroundColor};
+  background-color: ${palette.backgroundLight};
 `
 
 const flourish = css`
@@ -36,14 +36,14 @@ const card1 = {
 }
 
 const card2 = {
-  heading: "Experience your peak creative flow",
+  heading: "Experience your peak creative\u00a0flow",
   body: "With a partner to bounce ideas off and a structured deadline you’ll breeze through challenges and go home with a finished\u00a0track",
   image: './cardImage2.jpg',
   icon: './icon2.jpg'
 }
 
 const card3 = {
-  heading: "Get real life support and encouragement",
+  heading: "Real life support and encouragement",
   body: "You’ll meet, work and party with producers at all different levels, receive feedback and coaching, and play your music to a crowd.",
   image: './cardImage3.jpg',
   icon: './icon3.jpg'
@@ -55,7 +55,7 @@ export default class Section extends React.Component {
       <div className={section}>
       <div className={flourish}></div>
         <h1>Make music <br />together.</h1>
-        <p className={subheadline}>BeatCamp helps producers like you to escape the distractions of the modern world and collaborate in inspiring locations.</p>
+        <p className={subheadline}>BeatCamp helps producers and music-makers to escape the distractions of the modern world and collaborate in inspiring&nbsp;locations.</p>
         <Card card={card1} />
         <Card card={card2} />
         <Card card={card3} />
