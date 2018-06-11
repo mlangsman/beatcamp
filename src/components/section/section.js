@@ -53,8 +53,8 @@ export default class Section extends React.Component {
     return(
       <div className={section}>
       <div className={flourish}></div>
-        <h1>Make music <br />together.</h1>
-        <p className={subheadline}>We help producers and music-makers to escape the distractions of the modern world and collaborate in inspiring&nbsp;locations.</p>
+        <h1>Let&#39;s make <br />music together.</h1>
+        <p className={subheadline}>We’ll help you escape the distractions of modern life and do what you love by collaborating in inspiring places.</p>
         <Card card={card1} />
         <Card card={card2} />
         <Card card={card3} />
