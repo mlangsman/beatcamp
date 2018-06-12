@@ -5,13 +5,17 @@ import { spacing, palette } from '../../utils/globalStyles'
 const ContainerLight = styled('div')`
   padding-left: ${spacing*4}px;
   padding-right: ${spacing*4}px;
+  padding-bottom: ${spacing*4}px;
   background-color: ${palette.backgroundLight};
+  overflow:auto
 `
 
 const ContainerDark = styled('div')`
   padding-left: ${spacing*4}px;
   padding-right: ${spacing*4}px;
+  padding-bottom: ${spacing*4}px;
   background-color: ${palette.backgroundDark};
+  overflow:auto
 `
 
 export default class Container extends React.Component {
