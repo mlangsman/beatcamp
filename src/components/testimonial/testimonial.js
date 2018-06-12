@@ -9,7 +9,8 @@ console.log(Typography);
 
 const Mugshot = styled('img')`
   border-radius: 50%;
-  width: 188px;
+  max-width: 20%;
+  height: auto;
   display: block;
   margin: ${2*spacing}px auto;
   -webkit-box-shadow: 0px 23px 48px 0px rgba(139,139,139,0.5);
