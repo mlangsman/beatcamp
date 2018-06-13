@@ -16,7 +16,9 @@
     "react-flowtype": "https://github.com/bond-agency/react-flowtype/tarball/v1.0.4",
     "react-helmet": "^5.2.0",
     "react-parallax": "^1.7.0",
-    "react-ratio": "^0.1.5"
+    "react-ratio": "^0.1.5",
+    "react-responsive-embed": "^2.1.0",
+    "react-youtube": "^7.6.0"
   },
   "keywords": [
     "gatsby"
