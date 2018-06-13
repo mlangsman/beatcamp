@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Typography from 'typography'
+import Typography from '../utils/typography'
 import styled, { css } from 'react-emotion';
 import { spacing, palette } from '../utils/globalStyles'
 
@@ -11,6 +11,7 @@ import Nav from '../components/nav/nav'
 import Container from '../components/container/container'
 import Testimonial from '../components/testimonial/testimonial'
 import ResponsiveEmbed from 'react-responsive-embed'
+import CalloutBox from '../components/calloutBox/calloutBox'
 
 const background = css`
   background-color: ${palette.backgroundLight};
@@ -28,6 +29,11 @@ const video = css`
 const flex = css`
   display: flex;
 `
+const ProcessList = styled('ol')`
+  font-family: ${Typography.options.headerFontFamily.toString()};
+  font-weight: 500;
+`
+
 console.log(spacing);
 
 const IndexPage = () => (
@@ -46,6 +52,14 @@ const IndexPage = () => (
       <div className={video}>
         <ResponsiveEmbed src='https://www.youtube.com/embed/hNV3NvNDFDM' allowfullscreen />
       </div>
+      <CalloutBox title="How it works">
+        <ProcessList>
+          <li>We’ll match you with a partner in advance and make a personal introduction using our nifty Beatdating© process.</li>
+          <li>Together you’ll develop a complete track over the course of a day long camp.</li>
+          <li>You’ll be supported throughout your camp with constructive feedback and a group listening session. </li>
+          <li>We wrap up with an after party so you can hang out, enjoy a cool beer and experience your music in a totally different setting.</li>
+        </ProcessList>
+      </CalloutBox>
     </Container>
 
   </div>
