@@ -16,6 +16,7 @@ const Navbar = styled('div')`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 5000;
 `
 
 const Logo = styled('img')`
@@ -29,6 +30,7 @@ const floatRight = css`
   right: ${spacing}px;
   display: inline-block;
 `
+
 const scrollStyle = css`
   display:none;
 `
