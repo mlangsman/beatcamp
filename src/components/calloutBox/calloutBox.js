@@ -2,6 +2,12 @@ import React from 'react'
 import styled, { css } from 'react-emotion';
 import { spacing, palette } from '../../utils/globalStyles'
 
+
+const Wrapper = styled('div')`
+  position: relative;
+  z-index: 100;
+`
+
 const CalloutStyle = styled('div')`
   border: solid 15px white;
   background: ${palette.mediumGrey};
@@ -24,12 +30,12 @@ const Title = styled('h3')`
 export default class CalloutBox extends React.Component {
   render() {
     return(
-      <div>
+      <Wrapper>
       <Title>{this.props.title}</Title>
       <CalloutStyle>
         {this.props.children}
       </CalloutStyle>
-      </div>
+      </Wrapper>
     );
   }
 }
